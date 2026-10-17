@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robylyn U. Flores | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --subtext: #94a3b8;
+      --border: #334155;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+    .role {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin-bottom: 0.8rem;
+    }
+    .bio {
+      color: var(--subtext);
+      font-size: 0.98rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .badge-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .badge {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 0.4rem 0.9rem;
+      border-radius: 9999px;
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .project-card h3 {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .project-card p {
+      color: var(--subtext);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .tech-tag {
+      font-size: 0.78rem;
+      color: #cbd5e1;
+      background: #334155;
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .contact-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+    .contact-box a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      text-align: center;
+      color: var(--subtext);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Robylyn U. Flores</h1>
+      <p class="role">BS Computer Science (BSCS 4-1) | SorSU</p>
+      <p class="bio">
+        Passionate computer science student experienced in software logic, database handling, and full-stack web applications. Knowledgeable across multiple paradigms from low-level systems programming to web technologies.
+      </p>
+    </header>
+
+    <section>
+      <h2>Programming Languages & Technologies</h2>
+      <div class="badge-grid">
+        <span class="badge">Python</span>
+        <span class="badge">C++</span>
+        <span class="badge">Java</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Academic Projects</h2>
+      
+      <div class="project-card">
+        <h3>Inventory and Expiration Monitoring System</h3>
+        <p>
+          A software solution designed to streamline stock tracking and prevent product wastage through automated alerts for approaching expiration dates. Built to maintain accurate ledger tracking and data persistence.
+        </p>
+        <div class="tags">
+          <span class="tech-tag">Java / Python</span>
+          <span class="tech-tag">Database Management</span>
+          <span class="tech-tag">Object-Oriented Programming</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>SorSU Canteen Online Ordering System</h3>
+        <p>
+          A centralized online platform allowing students and faculty to browse food items, place orders, and minimize queue congestion inside the Sorsogon State University canteen.
+        </p>
+        <div class="tags">
+          <span class="tech-tag">HTML / CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Web Development</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Get In Touch</h2>
+      <div class="contact-box">
+        <p style="color: var(--subtext); margin-bottom: 0.5rem;">Open for academic inquiries, software projects, and tech collaborations:</p>
+        <p><strong>Email:</strong> <a href="mailto:robylyn.flores@sorsu.edu.ph">robylyn.flores@sorsu.edu.ph</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com" target="_blank">github.com/robylyn-flores</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Robylyn U. Flores. Built for Programming Languages Portfolio.</p>
+    </footer>
+  </div>
+</body>
+</html>
